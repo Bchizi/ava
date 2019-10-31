@@ -12,6 +12,8 @@ def handle_message(event_data):
     print('-' * 50)
     print(event_data)
 
+    
+
     if 'subtype' in event_data["event"] and event_data["event"]["subtype"] == 'channel_join':\
         client.chat_postMessage(
 			channel=event_data["event"]["channel"],
